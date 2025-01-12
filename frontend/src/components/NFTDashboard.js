@@ -19,7 +19,7 @@ function NFTDashboard({ walletAddress }) {
     }
 
     try {
-      const response = await axios.get(`http://localhost:3000/api/nfts/${address}`);
+      const response = await axios.get(`https://nftmarketplace-286f.onrender.com/api/nfts/${address}`);
 
       const nftsData = await Promise.all(
         response.data.map(async (nft) => {
